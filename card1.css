@@ -1,0 +1,74 @@
+body{
+    color:White;
+    background-color: #333;
+    font-family: sans-serif;
+}
+.kutu{
+    padding: 30px;
+}
+.img-box{
+    width: 650px;
+    height: auto;
+    background-color: black;
+    float:left;
+}
+ 
+.anime-img{
+    width: 230px;
+    height: auto;
+   border:solid 3px yellow; 
+    float:left;
+    animation:brightness 5s infinite alternate-reverse;
+}
+
+.img-container{
+    position: relative;
+    text-align: center;
+    color: white;
+}
+.brightness{
+    position: absolute;
+
+    background-color: yellow;
+    height: 10px;
+    opacity: 40%;
+    border-radius: 30%;
+    transform: skewY(140deg);
+    animation:bright  5s infinite alternate-reverse;
+  
+}
+@keyframes bright {
+0% {
+top: 20px;
+transition: linear;
+width: 5%;
+left: 10px;
+
+}
+50%{
+    top: 130px;
+    transition: linear;
+    width: 220px;
+    left: 0px; 
+}
+/* Nasıl yok versene */
+100% {
+    top: 300px;
+    transition: linear;
+    width: 60px;
+    left: 170px;
+    }
+}
+
+
+
+
+@keyframes brightness {
+from {top: 20px;transition: linear .2s;filter: contrast(1); }
+to {top: 300px;transition: linear .3s;  filter:contrast(1.5);}
+}
+.box-title{
+    font-family: sans-serif;
+    font-size: 24px;
+    margin-left:250px;
+}
